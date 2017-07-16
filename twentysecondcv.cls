@@ -329,7 +329,7 @@
         }\\%
     #2&\parbox[t]{0.83\textwidth}{%
 		\ifblank{#5}{}{#5 \\}
-		#6\vspace{\parsep}%
+		#6%
 	}\\
 }
 
