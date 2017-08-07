@@ -155,7 +155,7 @@
 \newcommand\programming[1]{ 
 	\renewcommand{\programming}{
 		\begin{tikzpicture}
-        	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
+        	%\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
 			\foreach [count=\i] \x/\y in {#1}{
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
@@ -168,6 +168,12 @@
 	\renewcommand{\projects}{
 		{#1}
 	}
+}
+
+\newcommand\hobbies[1]{ 
+  \renewcommand{\hobbies}{
+    {#1}
+  }
 }
 
 %----------------------------------------------------------------------------------------
@@ -207,7 +213,7 @@
               $} 
             & \cvnumberphone\\}
             
-      \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
+      \ifthenelse{\equal{\cvsite}{}}{}{
             {$
               \begin{array}{l}
               \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
@@ -250,8 +256,6 @@
         %------------------------------------------------
         
         \vspace{3mm}
-       
-	 {\large \textbf{Programming}} 
 
 		 \programming
          
@@ -259,6 +263,12 @@
         \profilesection{Projects}{3cm} 
         
         \projects
+
+  \vspace{4mm}
+
+  \profilesection{Hobbies}{3cm}
+
+  \hobbies
       
   \end{textblock}
 }

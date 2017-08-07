@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Software}\\\textbf{Engineering},
+        \textbf{Project}\\\textbf{Management},
+        \textbf{Embeded}\\\textbf{Systems},
+        \textbf{Test}\\\textbf{Automation},
+        \textbf{Full Stack}\\\textbf{Web Dev},
+        \textbf{Container}\\\textbf{Orchestration},
+        \textbf{Networking}\\\textbf{Engineer}
+    }
+}
+
+% Programming skill bars
+\programming{{C $\textbullet$ C++  $\textbullet$ R / 2}, {Java $\textbullet$ SQL $\textbullet$ \large \LaTeX / 3}, {HTML5 $\textbullet$ JS $\textbullet$ Python $\textbullet$ Go / 5}, {Unix Administration / 5}}
+
+% Projects text
+\projects{
+    \textbf{Dynastat} Real-time control of an embedded device for the measurement of biomechanics using standard browser technologies.\\
+    \textbf{PyRIGS} Event and equipment tracking and invoicing system.\\
+    \textbf{Javoo} A REST API for a mobile app designed to help patients with Alzheimer's disease.
+}
+
+% Hobbies
+\hobbies{
+    \textbf{Scuba Diving} BSAC Sports Diver (35m) and active club member.\\
+    \textbf{Event Technician} Sound and lights technician for live events from open mic nights to arena event management.
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{TOM PRICE} % Your name
+\cvjobtitle{ Software Engineer } % Job
+% title/career
+
+\cvlinkedin{/in/tomtom5152}
+\cvgithub{tomtom5152}
+\cvnumberphone{07972703115} % Phone number
+\cvsite{} % Personal website
+\cvmail{tom@codedinternet.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2013 - 2017}
+        {}
+        {MSc., Computer Science with Artificial Intelligence \textnormal{2:1}\\}
+        {\href{https://www.nottingham.ac.uk//}{The University of Nottingham}}
+        {Nottingham, UK}
+        {}
+	\twentyitem
+    	{2009 - 2013}
+		{}
+        {Physics, Economics, and IT}
+        {\href{http://www.staffordgrammar.co.uk/}{Stafford Grammar School}}
+        {Staffordshire, UK}
+        {}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem
+        {April 2012 -}
+        {Present}
+        {Director}
+        {\href{http://www.codedinternet.com}{Coded Internet LTD}}
+        {}
+        {
+        {
+        \begin{itemize}
+        \item Website and application developer.
+        \item Supply and management of enterprise grade networks, VOIP and hosting of medical records to multiple businesses.
+        \item Development of custom add-ons to existing software packages.
+        \item Providing customer support to end users.
+        \item Providing user training.
+        \end{itemize}
+        }
+        }
+     \\
+    \twentyitem
+    	{Oct 2013 -}
+		{Present}
+        {Software Engineer/Systems Administrator }
+        {\href{https://www.nottinghamtec.co.uk}{TEC PA \& Lighting}}
+        {}
+        {\begin{itemize}
+        \item Lead developer of TEC Rig Information Gathering System from Ruby on Rails to Python/Django.
+        \item Working as part of a small administrative team in system operations (Unix/Docker/CI/CD).
+        \item Hire \& Sales Manager - Mar 2014 - Feb 2015 \\ To support the Technical Director with overall responsibility for the booking of events, the sale of equipment, and the hire of required equipment or services.
+        \item IT Manager Jun 2015 - May 2016 \\ The IT Manager in collaboration to the IT Administrators is responsible for all of TECs computer systems and is responsible for liaising with UoN Information Services any third parties to which any IT is outsourced to.
+        \end{itemize}}
+        \\
+    \twentyitem
+        {Jun 2015 -}
+        {May 2016}
+        {IT Manager}
+        {\href{https://www.nottinghamtec.co.uk}{TEC PA \& Lighting}}
+        {}
+        {
+        {\begin{itemize}
+        \item An elected role working in collaboration with the IT Administrators.
+        \item Shared responsibility for system maintenance and monitoring.
+        \item Primary point of contact for liaising with The University of Nottingham Information Services department and any third parties to which IT is outsourced.
+    \end{itemize}}
+        }
+    \\   
+	\twentyitem
+    	{Mar 2014 -}
+		{Feb 2015}
+        {Hire \& Sales Manager}
+        {\href{https://www.nottinghamtec.co.uk}{TEC PA \& Lighting}}
+        {}
+        {
+        {
+        \begin{itemize}
+        \item Supporting the Technical Director with overall responsibility for the booking of events, the sale of equipment, and the hire of required equipment or services.
+        \item Joint responsibility with the Technical Director as the point of contact for all potential clients.
+        \item Joint responsibility with the Technical Director for emergency on-call situations.
+        \end{itemize}
+        }
+        }
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
